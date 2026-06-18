@@ -37,15 +37,6 @@ Traditional LLMs suffer from:
 
 This project addresses these limitations through an evidence-aware architecture.
 
-## Associated Publication
-
-This repository accompanies the research paper:
-
-Design and Evaluation of an Evidence-Aware RAG Pipeline for Industrial LLM Applications
-
-Submitted to Expert Systems with Applications (Elsevier).
-
-
 ## Key Contributions
 
 - Multi-stage reasoning pipeline
@@ -54,25 +45,6 @@ Submitted to Expert Systems with Applications (Elsevier).
 - Validation layer for hallucination reduction
 - Selective Retrieval-Augmented Generation (RAG)
 - Fully local deployment
-
-## Architecture
-
-<p align="center">
-  <a href="docs/fig1.png">
-      <img src="docs/fig1.png" width="800">
-  </a>
-</p>
-
-
-
-| Component | Purpose |
-|------------|----------|
-| Planner | Task decomposition |
-| Tools | Data acquisition |
-| RAG | Context retrieval |
-| Evidence Validation | Verification |
-| LLM | Final reasoning |
-
 
 ## Experimental Results
 
@@ -100,25 +72,74 @@ Compared with a standard LLM pipeline, the proposed evidence-aware architecture:
 
 *↑ Higher is better. ↓ Lower is better.*
 
+## Architecture
 
-## Repository Structure
+<p align="center">
+  <a href="docs/fig1.png">
+      <img src="docs/fig1.png" width="800">
+  </a>
+</p>
 
-├── planner/
-├── tools/
-├── rag/
-├── validation/
-├── experiments/
-├── paper/
-└── README.md
+## Installation
+
+```bash
+git clone https://github.com/xxxx/industrial-llm.git
+
+cd industrial-llm
+
+python -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+
+| Component | Purpose |
+|------------|----------|
+| Planner | Task decomposition |
+| Tools | Data acquisition |
+| RAG | Context retrieval |
+| Evidence Validation | Verification |
+| LLM | Final reasoning |
+
+## Associated Publication
+
+This repository accompanies the research paper:
+
+Design and Evaluation of an Evidence-Aware RAG Pipeline for Industrial LLM Applications
+
+Submitted to Expert Systems with Applications (Elsevier).
 
 ## Reproducibility
 
-All experiments reported in the paper can be reproduced using:
+## Reproducibility
 
-python create_machine_db.py (only once)
-python build_index.py (only once)
+All experiments reported in the paper can be reproduced with:
+
+python create_machine_db.py
+python build_index.py
 python main.py
+python experiments/evaluate.py
 
+
+# Repository Structure
+
+
+src/
+├── planner/       Query decomposition
+├── tools/         External tool execution
+├── rag/           Retrieval-Augmented Generation
+├── evidence/      Evidence construction
+├── validation/    Evidence verification
+└── llm/           Final reasoning
+
+experiments/
+├── benchmarks/
+├── evaluation/
+└── results/
+
+data/
+└── Industrial benchmark data
 
 
 ## License
