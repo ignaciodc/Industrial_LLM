@@ -58,10 +58,12 @@ Submitted to Expert Systems with Applications (Elsevier).
 ## Architecture
 
 <p align="center">
-  <a href="docs/architecture.png">
-      <img src="docs/architecture.png" width="600">
+  <a href="docs/fig1.png">
+      <img src="docs/fig1.png" width="600">
   </a>
 </p>
+
+
 
 | Component | Purpose |
 |------------|----------|
