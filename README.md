@@ -59,7 +59,7 @@ Submitted to Expert Systems with Applications (Elsevier).
 
 <p align="center">
   <a href="docs/fig1.png">
-      <img src="docs/fig1.png" width="600">
+      <img src="docs/fig1.png" width="800">
   </a>
 </p>
 
