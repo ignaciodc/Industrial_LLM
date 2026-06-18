@@ -20,8 +20,8 @@ A modular architecture that combines planning, tool execution, retrieval, eviden
 
 ## Architecture
 
-![Architecture](../docs/fig.png)
-https://github.com/ignaciodc/Industrial_LLM/blob/main/docs/fig.png
+![Architecture](../docs/fig1.png)
+
 ## Key Contributions
 
 - Multi-stage reasoning pipeline
