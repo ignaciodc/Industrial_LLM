@@ -83,7 +83,7 @@ Compared with a standard LLM pipeline, the proposed evidence-aware architecture:
 ## Installation
 
 
-git clone https://github.com/xxxx/industrial-llm.git
+git clone [https://github.com/xxxx/industrial-llm.git](https://github.com/ignaciodc/Industrial_LLM.git)
 
 cd industrial-llm
 
