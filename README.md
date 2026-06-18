@@ -76,6 +76,20 @@ Submitted to Expert Systems with Applications (Elsevier).
 
 ## Experimental Results
 
+### Key Results
+
+- 94.2% Grounded Accuracy
+- 3.7% Hallucination Rate
+- 95.6% Task Success Rate
+- 96.4% Response Consistency
+
+Compared with a standard LLM pipeline, the proposed evidence-aware architecture:
+
+- Improves grounded accuracy by 19.4%
+- Reduces hallucinations by 82.8%
+- Improves task success by 19.3%
+- Improves response consistency by 17.0%
+
 
 | Metric | LLM-only | RAG | Tool-Aug. | Proposed | Gain vs LLM |
 |----------|----------:|----------:|----------:|----------:|----------:|
